@@ -191,9 +191,9 @@ namespace Castle.DynamicProxy.Generators.Emitters
 			return member;
 		}
 
-		public MethodEmitter CreateMethod(string name, Type returnType, params Type[] parameterTypes)
+        public MethodEmitter CreateMethod(string name, Type returnType, params Type[] argumentTypes)
 		{
-			return CreateMethod(name, defaultAttributes, returnType, parameterTypes);
+            return CreateMethod(name, defaultAttributes, returnType, argumentTypes);
 		}
 
 		public MethodEmitter CreateMethod(string name, MethodInfo methodToUseAsATemplate)
